@@ -1,21 +1,21 @@
 body{
     /* background:linear-gradient(rgb(100, 164, 238),rgb(253, 245, 134)); */
-    background-image:url("https://img.freepik.com/free-photo/back-school-decoration-with-pencils-calculator-space_23-2147662344.jpg?semt=ais_items_boosted&w=740");
+    background-image:url("https://img.freepik.com/free-photo/back-school-decoration-with-pencils-calculator-space_23-2147662344.jpg?semt=ais_items_boosted&w=740 ");
     background-size:100% 99%;
-    opacity:0.5;
+    
     height:100%;
 
 }
 header{
     text-align :center;
-    color:rgb(46, 9, 124);
+    color:white;
     font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     font-size:40px;
     font-style:bold;
 }
 
 #main{
-    margin:98px 600px;
+    margin:8em 30em;
     width:100%;
    
 }
@@ -25,7 +25,7 @@ header{
     width:500px;
     height:450px;
     padding:10px;
-     box-shadow:2px 5px 5px black; 
+    /* box-shadow:2px 5px 5px blue; */
     border-radius:10px;
     background-color:rgb(52, 51, 51);
     border:2px solid black;
@@ -80,3 +80,56 @@ label{
     box-shadow:2px 2px 15px rgb(135, 132, 132);
 }
 
+@media(max-width:760px){
+    body{
+        background-size:cover;
+    }
+
+    header{
+    text-align:center;
+    }
+    
+    #main{
+    margin: 2em 3em;
+    }
+
+    #cal{
+        margin-right:0px;
+        width:375px;
+        height:410px;
+    }
+    label{
+        padding:10px 10px 10px 300px;
+    }
+    #inpt{
+        width:350px;
+        height:40px;
+        margin:3px;
+    }
+
+    .btn{
+        width:70px;
+        height:40px;
+    }
+    #btn1{
+        width:70px;
+        height:40px;
+    }
+
+
+}
+
+
+@media(min-width:767px )and (max-width:1024px){
+
+body{
+background-size:cover;
+}
+
+header{
+ text-align:center;
+}
+#main{
+   margin: 3em 10em;
+}
+}
