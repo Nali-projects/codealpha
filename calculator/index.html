@@ -1,1 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator </title>
+    <link rel="stylesheet" href="index.css">
+    <link rel="icon" href="https://static-00.iconduck.com/assets.00/calculator-icon-2042x2048-8mv9eopl.png"
+</head>
+<body>
+    <header>Basic Calculator</header>
+    <section>
+        <div id="main">
+            <div id="cal">
+                <label style="text-align:right;">Casio</label><br>
+                <input type="text" id="inpt" placeholder="" required><br>
+                <button class="btn" onclick="append(value)" value="C">C</button>
+                <button class="btn" onclick="append(value)" value="(">(</button>
+                <button class="btn" onclick="append(value)" value=")">)</button>
+                <button class="btn" onclick="append(value)" value="+">+</button>
+                <button class="btn" onclick="append(value)" value="7">7</button>
+                <button class="btn" onclick="append(value)" value="8">8</button>
+                <button class="btn" onclick="append(value)" value="9">9</button>
+                <button class="btn" onclick="append(value)" value="-">-</button>
+                 <button class="btn" onclick="append(value)" value="4">4</button>
+                <button class="btn" onclick="append(value)" value="5">5</button>
+                <button class="btn" onclick="append(value)" value="6">6</button>
+                <button class="btn" onclick="append(value)" value="%">%</button>
+                <button class="btn" onclick="append(value)" value="1">1</button>
+                <button class="btn" onclick="append(value)" value="2">2</button>
+                <button Class="btn" onclick="append(value)" value="3">3</button>
+                <button class="btn" onclick="append(value)" value="*">*</button>
+                <button class="btn" onclick="append(value)" value=".">.</button>
+                <button class="btn" onclick="append(value)" value="0">0</button>
+                <button class="btn" onclick="append(value)" value="/">/</button>
+                <button id="btn1" onclick="append(value)" value="=">=</button>
+            </div>
+        </div>
+    </section>
 
+    <script>
+        function append(value){
+          if(value === "C")
+          {
+            document.querySelector("#inpt").value="";
+          }
+          else if(value === "="){
+            document.getElementById("inpt").value=eval(document.querySelector("#inpt").value)
+          }
+          else{
+           document.querySelector("#inpt").value+=value;
+          }
+
+        }
+        
+    </script>
+</body>
+</html>
