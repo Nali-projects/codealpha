@@ -80,7 +80,7 @@ label{
     box-shadow:2px 2px 15px rgb(135, 132, 132);
 }
 
-@media(max-width:760px){
+@media(max-width:320px){
     body{
         background-size:cover;
     }
