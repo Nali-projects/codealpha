@@ -3,10 +3,11 @@ $name=$_POST['name'];
 $no=$_POST['no'];
 $sem=$_POST['sem'];
 
- $host="localhost";
- $username="root";
- $password="";
- $database="project";
+ $host="interchange.proxy.rlwy.net";
+$port=26765;
+$user="root";
+$password="qsNkFWwnCJIZcgogbwKqwxHyokwCDBEC";
+$database="railway";
  $conn=mysqli_connect($host,$username,$password,$database);
 if(!$conn)
 {
