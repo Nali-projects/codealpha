@@ -93,10 +93,11 @@ marquee a{
 $email=$_POST["email"];
 $pasword=$_POST["password"];
 
-$host="";
+$host="interchange.proxy.rlwy.net";
+$port=26765;
 $user="root";
-$password="";
-$database="project";
+$password="qsNkFWwnCJIZcgogbwKqwxHyokwCDBEC";
+$database="railway";
 $conn=mysqli_connect($host,$user,$password,$database);
 if(!$conn){
    echo "connection not established" ;
