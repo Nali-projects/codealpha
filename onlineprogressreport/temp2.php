@@ -4,10 +4,11 @@ $name=$_POST['name'];
 $roll_no=$_POST['no'];
 $sem=$_POST['sem'];
 
-$host="localhost";
+$host="interchange.proxy.rlwy.net";
+$port=26765;
 $user="root";
-$password="";
-$database="project";
+$password="qsNkFWwnCJIZcgogbwKqwxHyokwCDBEC";
+$database="railway";
 $conn=mysqli_connect($host,$user,$password,$database);
 
 if(!$conn){
